@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85,85,85);
+}
+
+a, .btn{
+      transition: all 300ms ease;    
+}
+
+
+/* Navbar */
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-decoration-color: white;
+}
+
+a:hover{
+    color: rgb(72, 71, 71);
+    text-decoration:wavy;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
