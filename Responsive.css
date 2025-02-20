@@ -1,0 +1,9 @@
+@media (max-width:1200px) {
+    #Navbar{
+        display: none;
+    }
+
+    #a-nav{
+        display: flex;
+    }
+}

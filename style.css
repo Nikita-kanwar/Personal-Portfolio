@@ -56,3 +56,22 @@ a:hover{
 .logo:hover{
     cursor: default;
 }
+
+#a-nav{
+    display:none;
+}
+
+.menu{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
