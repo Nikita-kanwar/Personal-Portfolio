@@ -189,11 +189,13 @@ margin-bottom: 1rem;
 #social-links{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
+    margin-top: 21em;
+    gap: 2rem;
 }
 
 .icon{
+
+    margin-top: 20px;
     cursor: pointer;
     height: 2rem;
 }
@@ -208,7 +210,7 @@ margin-bottom: 1rem;
 .btn{
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 1rem;
+    padding: 0.8rem;
     width: 8rem;
     border-radius: 2rem;
 
