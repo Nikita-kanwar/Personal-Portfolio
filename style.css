@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(237, 235, 235);
 }
 
 html {
@@ -17,12 +18,11 @@ p {
   color: rgb(85, 85, 85);
 }
 
-
 a,
 .btn {
   transition: all 300ms ease;
 }
-
+/* ***** Navbar ****** */
 
 nav,
 .nav-links {
@@ -32,37 +32,38 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  background-color:  rgb(53, 53, 53);
+  
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
   color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .logo:hover {
   cursor: default;
 }
 
-/* ********** */
+/* ***** Menu  ***** */
 
 #menu-nav {
   display: none;
@@ -85,7 +86,7 @@ a:hover {
 .menu-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -93,7 +94,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color:  rgb(53, 53, 53);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -105,7 +106,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color:white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -141,12 +142,14 @@ a:hover {
 .menu-icon span:first-child {
   transform: none;
 }
-
-/* ********/
+.profile1{
+  border-radius: 40%;
+}
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  padding-bottom:0;
+  height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -154,19 +157,19 @@ section {
 
 
 
-/* ******** */
+/* **** Home **** */
 
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
 }
 
@@ -200,14 +203,11 @@ section {
   gap: 1rem;
 }
 
-/* ****** */
-
  .icon {
   cursor: pointer;
   height: 2rem;
 } 
 
-/* ****** */
 
 .btn-container {
   display: flex;
@@ -255,7 +255,7 @@ section {
   gap: 1rem;
 }
 
-/* ******* */
+/* ***  About *** */
 
 #about {
   position: relative;

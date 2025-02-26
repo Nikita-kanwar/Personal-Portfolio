@@ -3,9 +3,7 @@
       height: 83vh;
       margin-bottom: 6rem;
     }
-    .about-containers {
-      flex-wrap: wrap;
-    }
+  
     #contact,
     #projects {
       height: fit-content;
@@ -42,9 +40,7 @@
       height: 275px;
       margin: 0 auto 2rem;
     }
-    .about-containers {
-      margin-top: 0;
-    }
+
   }
   
   @media screen and (max-width: 600px) {
