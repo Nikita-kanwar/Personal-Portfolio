@@ -17,14 +17,12 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -64,7 +62,7 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* ********** */
 
 #menu-nav {
   display: none;
@@ -144,7 +142,7 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
+/* ********/
 
 section {
   padding-top: 4vh;
@@ -154,11 +152,9 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-}
 
-/* PROFILE SECTION */
+
+/* ******** */
 
 #profile {
   display: flex;
@@ -204,14 +200,14 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
+/* ****** */
 
-.icon {
+ .icon {
   cursor: pointer;
   height: 2rem;
-}
+} 
 
-/* BUTTONS */
+/* ****** */
 
 .btn-container {
   display: flex;
@@ -259,31 +255,24 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/* ******* */
 
 #about {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
+
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
 }
 
-.about-containers,
+
 .about-details-container {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
 
 .arrow {
   position: absolute;
@@ -303,33 +292,15 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 100%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 
-/* EXPERIENCE SECTION */
+/* ****** */
 
 #experience {
   position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+} 
 
 .article-container {
   display: flex;
@@ -349,11 +320,10 @@ article {
 
 article .icon {
   cursor: default;
-}
+}  
+/* ******* */
 
-/* PROJECTS SECTION */
-
-#projects {
+ #projects {
   position: relative;
 }
 
@@ -378,7 +348,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/* ******* */
 
 #contact {
   display: flex;
@@ -387,36 +357,8 @@ article .icon {
   height: 70vh;
 }
 
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
 
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
 
 /* FOOTER SECTION */
 
@@ -427,4 +369,4 @@ footer {
 
 footer p {
   text-align: center;
-}
+} */
