@@ -1,18 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikita Kanwar Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Responsive.css" />
-  </head>
-  <body>
-    <!-- ***** Navbar ****** -->
-    <nav id="Navbar">
-      <div class="logo">Nikita kanwar</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikita Kanwar Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Responsive.css" />
+</head>
+
+<body>
+  <!-- ***** Navbar ****** -->
+  <nav id="Navbar">
+    <div class="logo">Nikita kanwar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ****** Toggle ****** -->
+  <nav id="menu-nav">
+    <div class="logo">Nikita Kanwar</div>
+    <div class="menu">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ***** Home ****** -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="profile1" src="assets/profile.png" />
+    </div>
+
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Nikita Kanwar</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <p>Lorem Lorem ipsum dolor sit acing elit. Animi fuga eveniet similique perferendis sint odio labore quis ea earum
+        quasi ad id, quae, sequi eos maiores, fugiat non delectus debitis.</p>
+      <br>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact
+        </button>
+      </div>
+
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/nikitakanwar21/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Nikita-kanwar'" />
+      </div>
+    </div>
+
+  </section>
+  <!-- About **** -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Experience icon" class="icon" />
+            <h2>Education</h2>
+            <p>BCA</p>
+            <p>Maharshi Dayanand Sarswati University</p>
+          </div>
+          <div class="details-container">
+            <h2>Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/icons8-html-5-50.png" class="icon" />
+                <h3>HTML</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-css-logo-30.png" class="icon" />
+                <h3>CSS</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-bootstrap-logo-50.png" class="icon" />
+                <h3>Bootstrap</h3>
+
+
+              </article>
+              <article>
+                <img src="./assets/icons8-tailwind-css-50.png" class="icon" />
+                <h3>Tailwind </h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-javascript-logo-50.png" class="icon" />
+                <h3>Javascript</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-react-80.png" class="icon" />
+                <h3>ReactJS</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-c++-50.png" class="icon" />
+                <h3>C++</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-python-30.png" class="icon" />
+                <h3>Python</h3>
+
+
+
+              </article>
+              <article>
+                <img src="./assets/icons8-java-logo-30.png" class="icon" />
+                <h3>Java</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-github-logo-30.png" class="icon" />
+                <h3>GitHub</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-git-logo-50.png" class="icon" />
+                <h3>Git</h3>
+
+              </article>
+              <article>
+                <img src="./assets/icons8-visual-studio-code-2019-50.png" class="icon" />
+                <h3>VsCode</h3>
+
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Projects ******* -->
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p id="email"><a href="mailto:kanwarnikita2025@gmail.com">kanwarnikita2025@gmail.com</a></p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -21,225 +242,9 @@
         </ul>
       </div>
     </nav>
-    <!-- ****** Toggle ****** -->
-    <nav id="menu-nav">
-      <div class="logo">Nikita Kanwar</div>
-      <div class="menu">
-        <div class="menu-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    <p>Copyright &#169; 2025 Nikita Kanwar. <br> All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-    <!-- ***** Home ****** -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="profile1" src="assets/profile.png" />
-      </div>
-
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nikita Kanwar</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <p>Lorem Lorem ipsum dolor sit acing elit. Animi fuga eveniet similique perferendis sint odio labore quis ea earum quasi ad id, quae, sequi eos maiores, fugiat non delectus debitis.</p>
-<br>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-           Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/nikitakanwar21/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Nikita-kanwar'"
-          />
-        </div>
-      </div>
-        
-    </section>
-<!-- About **** -->
-<section id="about">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-  
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img
-          src="./assets/education.png"
-            alt="Experience icon"
-            class="icon"
-          />
-          <h2>Education</h2>
-          <p>BCA</p>
-          <p>Maharshi Dayanand Sarswati University</p>
-        </div>
-        <div class="details-container">
-          <h2>Skills</h2>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>Bootstrap</p>
-          <p>Tailwind CSS</p>
-          <p>ReactJS</p>
-          <p>C++</p>
-          <p>Python</p>
-          <p>Java</p>
-          <p>VsCode</p>
-          <p>Git & GitHub</p>
-         
-           
-            
-
-        </div>
-      </div>
-     
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#experience'"
-  />
-</section>
-                    
-         <!-- Projects ******* -->
-    
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Project1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Project2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Project3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-    <!-- Contact -->
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p id="email" ><a href="mailto:kanwarnikita2025@gmail.com">kanwarnikita2025@gmail.com</a></p>
-          </div>
-
-        </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2025 Nikita Kanwar. <br> All Rights Reserved.</p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
-  </html>
-  
+</html>
